@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 
-const wss = new WebSocket.Server({ port: 3000 });
+const wss = new WebSocket.Server({ port: 3001 });
 
 wss.on("connection", (ws) => {
     console.log("Клиент подключился");
@@ -19,4 +19,4 @@ wss.on("connection", (ws) => {
     });
 });
 
-console.log("WebSocket сервер запущен на ws://192.168.0.109:3000");
+console.log("WebSocket сервер запущен на ws://192.168.0.109:3001");
